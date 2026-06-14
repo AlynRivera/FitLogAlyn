@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.launch
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<FloatingActionButton>(R.id.fabAgregar).setOnClickListener {
             startActivity(Intent(this, AgregarEjercicioActivity::class.java))
+        }
+        findViewById<Button>(R.id.btnHistorial).setOnClickListener {
+            startActivity(Intent(this, HistorialActivity::class.java))
         }
     }
 }
